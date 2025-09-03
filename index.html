@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM-JavaScript</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+    <header>
+        <h1>QCM</h1>
+    </header>
+
+    <body>
+
+        <section class="api_helper">
+            <form>
+            <h1>Quiz Generator</h1>
+                <p>
+                    <label for="nb_question">nombre de question:</label>
+                    <select name="nb_question" id="nb_question">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="category">Categorie:</label>
+                    <select name="category" id="category">
+                        <option value="9">General Knowledge.</option>
+                        <option value="10">Books</option>
+                        <option value="11">Film</option>
+                        <option value="12">Music</option>
+                        <option value="15">Video Games</option>
+                        <option value="17">Science & Nature.</option>
+                        <option value="18">Science: Computers.</option>
+                        <option value="20">Mythology.</option>
+                    </select>
+                </p>
+                <p>
+                   <label for="difficulty">difficultie</label>
+                   <select name="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                   </select>
+                </p>
+                <p>
+                   <label for="Type">Type</label>
+                   <select name="Type" id="Type">
+                    <option value="multiple">multiple</option>
+                    <option value="boolean">boolean</option>
+                   </select>
+                </p>
+                <button type="submit">GENERATE QUIZ</button>
+            </form>
+        </section>
+        <div class="time hidden">
+            <div>Time remaining: <span id="clock">20</span>s</div>
+        </div>
+
+         <form class="quiz hidden">
+        </form>
+        <div class="next hidden">
+            <div class="button">Next</div>
+        </div>
+        <div class="score hidden" >
+        </div>
+    </body>
+    
+</body>
+</html>
